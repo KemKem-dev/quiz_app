@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="description" content="a quiz app">
+    <meta charset="keywords" content="quiz, app, javascript">
+    <meta charset="author" content="Oluwakemi Adeleke">
+    <meta charset="viewport" content="width=device-width, initial scale=1.0">
+    <meta charset="X-UA-Compatible" content="ie=edge">
+    <title>My Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <form id="quiz" name="quiz">
+        <h2><span class="color-change">Test your IQ here</span></h2>
+        <ol>
+            <li>
+                <p>What is the capital of Canada?</p>
+
+                <input id="textbox" type="text" name="question1">
+            </li>
+            <li>
+
+                <p>Which word is closest in meaning to APPREHENSIVE?</p>
+                <input type="radio" id="mc" name="question2" value="Anxious">Anxious <br>
+                <input type="radio" id="mc" name="question2" value="Thorough">Thorough <br>
+            </li>
+
+            <li>
+                <P>Who is the founder of Microsoft?</P>
+                <input type="radio" id="mc" name="question3" value="Romans">Romans<br>
+                <input type="radio" id="mc" name="question3" value="Bill Gate">Bill Gate<br>
+            </li>
+
+            <li>
+                <p>What operating system does Huawei use?</p>
+                <input type="radio" id="mc" name="question4" value="Android Studio">Android Studio<br>
+                <input type="radio" id="mc" name="question4" value="HarmonyOs">HarmonyOs<br>
+            </li>
+
+            <li>
+                <p>Who is the father of computer?</p>
+                <input type="radio" id="mc" name="question5" value="Charles Babbage">Charles Babbage<br>
+                <input type="radio" id="mc" name="question5" value="Lord Bryon">Lord Bryon<br>
+            </li>
+
+        </ol>
+
+
+        <input id="button" type="button" value="SUBMIT" onclick="check();">
+
+    </form>
+
+    <div id="after_submit">
+        <p id="message"></p>
+        <p id="number_correct"></p>
+        <img id="picture">
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
